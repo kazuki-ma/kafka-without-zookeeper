@@ -1,3 +1,10 @@
+You can get image via Docker Hub. https://hub.docker.com/repository/docker/kazukima/kafka-without-docker
+
+```
+docker run -p 9092:9092 --rm -it kazukima/kafka-without-docker:latest
+```
+
+
 kafka-without-zookeeper
 ====
 
