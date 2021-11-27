@@ -1,7 +1,7 @@
 FROM amazoncorretto:16
 # https://hub.docker.com/_/openjdk
 
-ENV KAFKA_DISTRIBUTION=https://downloads.apache.org/kafka/2.8.0/kafka_2.13-2.8.0.tgz
+ENV KAFKA_DISTRIBUTION=https://downloads.apache.org/kafka/3.0.0/kafka_2.13-3.0.0.tgz
 
 RUN curl -s  --output /tmp/kafka.tgz ${KAFKA_DISTRIBUTION} && \
     yes | yum install tar gzip gettext && \

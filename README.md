@@ -1,12 +1,16 @@
-You can get image via Docker Hub. https://hub.docker.com/repository/docker/kazukima/kafka-without-docker
+You can get image via Docker Hub.
+
+https://hub.docker.com/r/kazukima/kafka-without-zookeeper/tags
 
 ```
-docker run -p 9092:9092 --rm -it kazukima/kafka-without-docker:latest
+docker run -p 9092:9092 --rm -it kazukima/kafka-without-zookeeper:latest
 ```
 
 
 kafka-without-zookeeper
 ====
+
+https://hub.docker.com/r/kazukima/kafka-without-zookeeper/tags
 
 Dockerfile for runs kafka without zookeeper.
 
@@ -26,7 +30,7 @@ Simple run
 Following one-line start kafka on localmachine, broker advertising name is `localhost`.
 
 ```
-docker run -p 9092:9092 --rm -it kazukima/kafka-without-docker:latest
+docker run -p 9092:9092 --rm -it kazukima/kafka-without-zookeeper:latest
 ```
 
 You can create topic by following command.
@@ -50,7 +54,7 @@ docker-compose
 version: '2'
 services:
   kafka:
-    image: kazukima/kafka-without-docker:latest
+    image: kazukima/kafka-without-zookeeper:latest
     hostname: kafka
     container_name: kafka
     ports:
